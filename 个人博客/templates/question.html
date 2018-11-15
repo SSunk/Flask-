@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}想对我说啥？{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+{% endblock %}
+{% block main %}
+    <div class="text-tt">
+         <h1 align="center" style="color:white ; font-size:50px">问我啥呢？</h1>
+    </div>
+    <form action="" method="post">
+          <div
+                  class="form-container">
+
+          </div>
+    <div class="logform-group">
+        <input type="text" class="form-control" placeholder="请输入标题" name="title">
+    </div>
+    <div class="qu_context" >
+        <textarea class="form-control" rows="10" placeholder="请输入内容" name="content"></textarea>
+
+        <button type="submit" class=" btn-primary btn-lg ">发表</button>
+    </div>
+
+</form>
+
+{% endblock %}
