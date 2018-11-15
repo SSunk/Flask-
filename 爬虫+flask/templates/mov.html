@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影列表</title>
+
+</head>
+<body>
+    {% for l in link %}
+
+      <p>{{ l.name }}</p>
+        <br>
+
+      <a href="{{ l.hre }}">{{ l.link }}</a>
+        <hr>
+
+    {% endfor %}
+
+
+
+
+
+
+
+</body>
+</html>

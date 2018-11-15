@@ -1,0 +1,30 @@
+.page-header{
+    text-align: center;
+
+}
+
+.form-control {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid blue;
+    border-radius: .25rem;
+    transition: border-color .15s
+}
+
+
+.btn-primary{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+
+
+
+}
+
