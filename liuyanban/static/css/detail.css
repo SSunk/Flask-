@@ -1,0 +1,24 @@
+.detail_title{
+    text-align: center;
+    border-bottom: 1px solid darkred;
+    overflow: hidden;
+
+}
+
+
+
+.detail_text {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 660px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    font-size: medium;
+    font-weight: 900;
+
+}
+.form-control-pinglun{
+    margin: auto 0;
+}

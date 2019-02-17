@@ -1,0 +1,30 @@
+{% extends 'baseback.html' %}
+
+{% block main %}
+<form action="" method="post" >
+
+
+<div class="form-group required">
+    <label class="form-control-label" for="name">昵称：</label>
+
+    <input class="form-control" id="name" name="name" required type="text" value="">
+
+        </div>
+
+
+<div class="form-group required">
+    <label class="form-control-label" for="body">大声说出你要表白的话吧！</label>
+
+    <textarea class="form-control" id="body" name="context" required rows="10"></textarea>
+
+
+</div>
+
+
+    <button type="submit" class="btn btn-danger">提交</button>
+
+
+
+    </form>
+
+{% endblock %}

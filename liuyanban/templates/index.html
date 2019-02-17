@@ -1,0 +1,29 @@
+{% extends 'baseback.html' %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for( 'static',filename='css/index.css') }}" xmlns="http://www.w3.org/1999/html">
+{% endblock %}
+{% block main %}
+    <div class="all_style">
+
+
+        {% for ly in questions %}
+            <ul class="ul_style">
+            <li>
+                <div class="question-group" >
+                    <p class="leixing">类型：{{ ly.leixing }}</p>
+                   <p role="presentation" ><a href="{{ url_for('detail',id = ly.id) }}">内容:{{ ly.context }}</a></p>
+                    <p class="nicheng">昵称：{{ ly.name }} </p>
+
+                    <div class="question-info">
+                        <span class="question-time">{{ ly.create_time }}</span>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        {% endfor %}
+
+
+    </div>
+
+
+{% endblock %}

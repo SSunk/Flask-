@@ -1,0 +1,47 @@
+{% extends 'baseback.html' %}
+
+{% block head %}
+ <link rel="stylesheet" href="{{url_for( 'static',filename='css/detail.css') }}">
+{% endblock %}
+
+{% block main %}
+    <div class="detail">
+        <div class="detail_title">
+            <h1>昵称：{{ ques.name }}</h1>
+            <span class="time">{{ ques.create_time }}</span>
+
+        </div>
+    <hr>
+
+        <div class="detail_text">
+            <p>{{ ques.context }}</p>
+        </div>
+
+         <div class="pinglun">
+            <p>
+            </p>
+        </div>
+
+
+    </div>
+    <hr>
+
+
+    <form action=" " method="post">
+        <div class="form-control-pinglun">
+            <label class="form-control-label" for="body">评论：（0）</label>
+
+            <input class="form-control" id="name" name="name" required type="text" value="">
+
+        </div>
+        <br>
+        <button type="submit" class="btn btn-danger">提交</button>
+    </form>
+
+
+
+
+
+
+
+{% endblock %}
